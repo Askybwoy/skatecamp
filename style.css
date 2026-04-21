@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #F9ECE6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: sans-serif;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1280px;
+    aspect-ratio: 1280 / 832;
+    background: #F9ECE6;
+    overflow: hidden;
+}
+
+.video-bg {
+    position: absolute;
+    left: 11.71875%;
+    top: 9.61538%;
+    width: 77.578125%;
+    height: 67.06731%;
+    object-fit: cover;
+    border-radius: 0;
+    z-index: 1;
+}
+
+.shape {
+    position: absolute;
+    display: block;
+    object-fit: contain;
+    z-index: 2;
+}
+
+.shape--green {
+    left: 10.859375%;
+    top: 20.43269%;
+    width: 20.78125%;
+    height: 16.94712%;
+}
+
+.shape--pink {
+    left: 72.734375%;
+    top: 22.23558%;
+    width: 11.015625%;
+    height: 13.46154%;
+}
+
+.shape--teal {
+    left: 24.84375%;
+    top: 78.125%;
+    width: 50.3125%;
+    height: 10.9375%;
+}
+
+.object-18 {
+    position: absolute;
+    left: 32.8125%;
+    top: 34.25481%;
+    width: 4.0359375%;
+    height: 2.88462%;
+    object-fit: contain;
+    z-index: 3;
+}
+
+/* Mobile layout */
+@media (max-width: 768px) {
+    body {
+        align-items: flex-start;
+    }
+
+    .container {
+        max-width: 393px;
+        aspect-ratio: 393 / 852;
+        margin: 0 auto;
+    }
+
+    .video-bg {
+        left: -62.84987%;
+        top: 13.84977%;
+        width: 220.864%;
+        height: 57.30634%;
+    }
+
+    .shape--green {
+        left: 20.35623%;
+        top: 9.2723%;
+        width: 59.77863%;
+        height: 14.62324%;
+    }
+
+    .shape--pink {
+        left: 32.56997%;
+        top: 71.74648%;
+        width: 32.56997%;
+        height: 11.94014%;
+    }
+
+    .shape--teal {
+        left: 5.31807%;
+        top: 88.14554%;
+        width: 89.59288%;
+        height: 5.80634%;
+    }
+
+    .object-18 {
+        left: 82.95165%;
+        top: 21.59624%;
+        width: 10.94148%;
+        height: 2.34742%;
+    }
+}
+
+/* Scale up on very large screens while maintaining aspect ratio */
+@media (min-width: 1440px) {
+    .container {
+        transform: scale(1.1);
+        transform-origin: center center;
+    }
+}
