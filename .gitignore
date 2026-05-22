@@ -1,0 +1,30 @@
+# dependencies
+node_modules
+.next
+out
+build
+dist
+
+# env
+.env
+.env.local
+.env*.local
+
+# ts
+*.tsbuildinfo
+
+# editor
+.vscode
+.idea
+.DS_Store
+
+# assets and references not needed for localhost
+assets/
+imgs/
+references/
+public/assets/
+public/imgs/
+public/fonts/
+
+# Local Netlify folder
+.netlify
